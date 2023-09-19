@@ -23,4 +23,10 @@ describe("QueryProcessor", () => {
         const response: string = QueryProcessor(query);
         expect(response).toBe(("tloke"));
     });
+
+    test('What is 9 divided by 3?', () => {
+        const query = "What is 9 divided by 3?";
+        const response: string = QueryProcessor(query);
+        expect(response).toBe(("3"));
+    });
 });
